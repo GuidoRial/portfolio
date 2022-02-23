@@ -1,0 +1,29 @@
+.nav-bar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover,
+h2:hover {
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.link-container {
+    display: flex;
+    gap: 0.8rem;
+}

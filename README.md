@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project features
 
-## Available Scripts
+1. General
 
-In the project directory, you can run:
+    - Color palette
+        - #141414 // Primary color
+        - #252525 // Primary color
+        - #fbfbfb // Primary color
+        - #d3bdff // Secondary color
+    - Add a light mode
+        - Color palette
+            - #252525 // Primary color
+            - #fbfbfb // Primary color
+            - #d3bdff // Secondary color
+    - ENG / ESP options
+    - Ecosystem
+        - People should be able to move to and from:
+            - Portfolio
+            - Github
+            - Linkedin
+            - CV
+        - Making easily accessible links in each of those pages it's **extremely important**
+        - All sites share the same color scheme
+    - It's _responsive_
+    - People know _who I am and what I do on opening of this page_, that means that I have to be **intentional** with the way I present myself. To achieve that I have to:
+        1. Show my face. I'm not a soulless coder.
+        2. I can talk briefly about my interests
 
-### `npm start`
+2. Navbar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - Is sticky
+    - Its links redirect people to wherever they want to go
+        - Home
+        - About
+        - Skills
+        - Projects
+        - Contact
+        - **Language selector**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Home
 
-### `npm test`
+    - My name
+    - Front end web developer
+    - My photo
+    - A big statement (Lo que no se, lo aprendo)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. About
 
-### `npm run build`
+    - Three sentences or less
+        - I'm constantly learning, I love what I do and love learning about this
+        - I'm hardworking, passionate.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Skills
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Frontend
+        - HTML
+        - CSS
+        - JavaScript
+        - React
+        - React Router
+        - MaterialUI
+    - Tools
+        - Git
+        - Firebase
+        - Webpack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Projects
 
-### `npm run eject`
+    - Each project card needs to have a picture, description, features and two buttons, one for the live preview and other for the source code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - It needs to have a form connected to Firebase so that people can send me an email straight from my website
+    - It has to have links to Linkedin and GitHub
+    - It has a download CV button
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. Things like animations in the background, personalized cursor and that thing where the background moves at different speeds as I scroll could be cool
