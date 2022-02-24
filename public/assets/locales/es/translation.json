@@ -2,9 +2,13 @@
     "Home": "INICIO",
     "About": "¿Quién soy?",
     "Skills": "Habilidades",
-    "Projects": "Mis proyectos",
+    "Projects": "Proyectos",
     "Contact": "Hablemos",
     "Change_language": "Idioma",
     "What_I_do": "Desarrollador Web Front End",
-    "Statement": "Lo que no se, lo aprendo"
+    "Statement": "Lo que no se, lo aprendo",
+    "About_me": "¿Quién soy?",
+    "Love_learning": "Con mucho amor por aprender y ayudar desde que era muy chico, decidí estudiar Kinesiología.",
+    "Create_things": "Siempre quise dedicar mi vida a crear cosas y resolver problemas. Cuando vi que el desarrollo de software incluía esas cuatro cosas mi mente hizo 🤯",
+    "Lifelong_learning": "Comprometido con la idea de que uno nunca termina de aprender, decidí cambiar de rumbo. Hoy soy un Desarrollador Web Front End autodidacta con una pasión por JavaScript, React y todo lo que involucre el desarrollo web."
 }

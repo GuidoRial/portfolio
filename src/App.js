@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
+import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -29,6 +30,7 @@ function App() {
                 />
             )}
             <Hero t={t} />
+            <About />
         </div>
     );
 }

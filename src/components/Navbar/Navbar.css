@@ -8,8 +8,9 @@
     align-items: center;
     padding: 0.5rem 1rem;
     width: 100%;
+    position: -webkit-sticky;
     position: sticky;
-
+    top: 0px;
 }
 
 .nav-bar-lists {
@@ -36,7 +37,7 @@
     .nav-bar {
         justify-content: space-between;
     }
-    .fa-bars{
+    .fa-bars {
         margin-right: 0.5rem;
     }
 }

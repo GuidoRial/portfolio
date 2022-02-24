@@ -41,10 +41,10 @@
 
 3. Home
 
-    - My name
-    - Front end web developer
-    - My photo
-    - A big statement (Lo que no se, lo aprendo)
+    - My name [DONE]
+    - Front end web developer [DONE]
+    - My photo [DONE]
+    - A big statement (Lo que no se, lo aprendo) [DONE]
 
 4. About
 
