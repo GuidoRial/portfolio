@@ -1,8 +1,8 @@
-import i18next from "i18next";
+import i18next, { t } from "i18next";
 import React from "react";
 import "./Sidebar.css";
 
-function Sidebar({ t, sidebar, setSidebar, showSidebar }) {
+function Sidebar({sidebar, setSidebar, showSidebar }) {
     const toggleLanguage = () => {
         i18next.language === "en"
             ? i18next.changeLanguage("es")

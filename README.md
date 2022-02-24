@@ -52,7 +52,7 @@
         - I'm constantly learning, I love what I do and love learning about this
         - I'm hardworking, passionate.
 
-5. Skills
+5. Skills [DONE]
 
     - Frontend
         - HTML

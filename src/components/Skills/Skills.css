@@ -1,6 +1,7 @@
 .skills-container {
     background-color: var(--primary-color);
     color: var(--white);
+    font-family: Lato;
     padding: 1rem;
     width: 100%;
     height: 70%;
@@ -9,7 +10,6 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--secondary-color);
-
 }
 
 .skills-container > h2 {
@@ -27,7 +27,6 @@
 }
 
 .skill {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +41,7 @@
     color: var(--secondary-color);
 }
 
-.skill > i {
+.skill > i,
+.skill > p {
     cursor: pointer;
 }
-

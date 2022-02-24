@@ -1,8 +1,9 @@
 import React from "react";
 import "./Hero.css";
 import myPhoto from "../../assets/my-photo.jpeg";
+import { t } from "i18next";
 
-function Hero({ t }) {
+function Hero() {
     return (
         <section className="hero">
             <div className="hero-who-i-am ">

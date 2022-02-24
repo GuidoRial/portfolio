@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/navbar";
+import Projects from "./components/Projects/Projects";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Skills from "./components/Skills/Skills";
 
@@ -24,15 +25,16 @@ function App() {
             />
             {sidebar && (
                 <Sidebar
-                    t={t}
+                   
                     sidebar={sidebar}
                     setSidebar={setSidebar}
                     showSidebar={showSidebar}
                 />
             )}
-            <Hero t={t} />
+            <Hero />
             <About />
             <Skills />
+            <Projects />
         </div>
     );
 }
