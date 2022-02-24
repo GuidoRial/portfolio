@@ -48,7 +48,7 @@
 
 4. About
 
-    - Three sentences or less
+    - Three sentences or less [DONE]
         - I'm constantly learning, I love what I do and love learning about this
         - I'm hardworking, passionate.
 
@@ -59,8 +59,6 @@
         - CSS
         - JavaScript
         - React
-        - React Router
-        - MaterialUI
     - Tools
         - Git
         - Firebase

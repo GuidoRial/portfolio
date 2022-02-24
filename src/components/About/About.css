@@ -30,7 +30,7 @@
 
 .about-container > p {
     font-size: 1.3rem;
-    color: var(--secondary-text);
+    color: var(--white);
 }
 
 @media (max-width: 850px) {

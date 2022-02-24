@@ -3,6 +3,11 @@ export const flagStyle = {
     height: "30px",
     borderRadius: "50%",
     objectFit: "cover",
-    marginRight: "1rem"
+    marginRight: "1rem",
 };
 
+export const iconStyle = {
+    width: "30px",
+    height: "30px",
+    cursor: "pointer",
+};

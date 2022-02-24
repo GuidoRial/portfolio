@@ -53,6 +53,7 @@
     .hero {
         grid-template-columns: 1fr;
         height: 70%;
+        width: 100%;
     }
 
     .hero-who-i-am {

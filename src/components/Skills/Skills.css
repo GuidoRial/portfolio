@@ -1,0 +1,48 @@
+.skills-container {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--secondary-color);
+
+}
+
+.skills-container > h2 {
+    font-size: 3rem;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.skill {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.skill:hover {
+    color: var(--secondary-color);
+}
+
+.skill > i {
+    cursor: pointer;
+}
+

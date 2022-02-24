@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Skills from "./components/Skills/Skills";
 
 function App() {
     const { t } = useTranslation();
@@ -31,6 +32,7 @@ function App() {
             )}
             <Hero t={t} />
             <About />
+            <Skills />
         </div>
     );
 }
