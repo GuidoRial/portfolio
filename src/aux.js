@@ -5,3 +5,4 @@ export const flagStyle = {
     objectFit: "cover",
     marginRight: "1rem"
 };
+

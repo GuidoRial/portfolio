@@ -1,7 +1,17 @@
+import i18next from "i18next";
 import React from "react";
 import "./Sidebar.css";
 
-function Sidebar({ t }) {
+function Sidebar({ t, sidebar, setSidebar, showSidebar }) {
+    const toggleLanguage = () => {
+        i18next.language === "en"
+            ? i18next.changeLanguage("es")
+            : i18next.changeLanguage("en");
+        showSidebar()
+    };
+
+
+
     return (
         <aside>
             <ul className="sidebar-link-container">
@@ -9,7 +19,9 @@ function Sidebar({ t }) {
                 <li className="sidebar-lists">{t("Skills")}</li>
                 <li className="sidebar-lists">{t("Projects")}</li>
                 <li className="sidebar-lists">{t("Contact")}</li>
-                <li className="sidebar-lists">{t("Change_language")}</li>
+                <li className="sidebar-lists" onClick={toggleLanguage}>
+                    {t("Change_language")}
+                </li>
             </ul>
         </aside>
     );

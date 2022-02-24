@@ -19,7 +19,14 @@ function App() {
                 setSidebar={setSidebar}
                 showSidebar={showSidebar}
             />
-            {sidebar && <Sidebar t={t} />}
+            {sidebar && (
+                <Sidebar
+                    t={t}
+                    sidebar={sidebar}
+                    setSidebar={setSidebar}
+                    showSidebar={showSidebar}
+                />
+            )}
         </div>
     );
 }

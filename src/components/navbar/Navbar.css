@@ -1,5 +1,5 @@
 .nav-bar {
-    background-color: var(--primary-color);
+    background-color: var(--header-background);
     color: var(--white);
     border-bottom: 2px solid var(--secondary-color);
     font-size: 1.5rem;

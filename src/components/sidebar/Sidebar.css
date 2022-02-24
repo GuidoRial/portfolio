@@ -3,11 +3,11 @@ aside {
     right: 0;
     height: 100%;
     width: 55%;
-    background-color: var(--primary-color);
+    background-color: var(--sidebar-background);
     color: var(--white);
     border-left: 2px solid var(--secondary-color);
     padding: 1rem;
-    animation: slideSideBar 0.7s ease-in-out;
+    animation: slideSideBar 0.7s ease-in;
 }
 
 @keyframes slideSideBar {
