@@ -1,0 +1,39 @@
+aside {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 55%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-left: 2px solid var(--secondary-color);
+    padding: 1rem;
+    animation: slideSideBar 0.7s ease-in-out;
+}
+
+@keyframes slideSideBar {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.sidebar-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 0.5rem;
+    gap: 1.5rem;
+}
+.sidebar-lists {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.sidebar-lists:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}

@@ -1,7 +1,8 @@
 {
     "Home": "INICIO",
     "About": "¿Quién soy?",
-    "Skills": "¿Qué puedo hacer?",
+    "Skills": "Habilidades",
     "Projects": "Mis proyectos",
-    "Contact": "Hablemos"
+    "Contact": "Hablemos",
+    "Change_language": "Idioma"
 }
