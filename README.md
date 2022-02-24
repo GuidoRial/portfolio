@@ -20,7 +20,7 @@
             - Portfolio
             - Github
             - Linkedin
-            - CV
+            - CV // ESP / ENG with ability to choose
         - Making easily accessible links in each of those pages it's **extremely important**
         - All sites share the same color scheme
     - It's _responsive_

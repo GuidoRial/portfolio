@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
-import Navbar from "./components/navbar/navbar";
-import Sidebar from "./components/sidebar/Sidebar";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
     const { t } = useTranslation();
@@ -27,6 +28,7 @@ function App() {
                     showSidebar={showSidebar}
                 />
             )}
+            <Hero t={t} />
         </div>
     );
 }

@@ -5,7 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { flagStyle } from "../../aux";
 import i18next from "i18next";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Sidebar from "../sidebar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 
 function Navbar({ t, sidebar, setSidebar, showSidebar }) {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -31,7 +31,7 @@ function Navbar({ t, sidebar, setSidebar, showSidebar }) {
 
     return (
         <nav className="nav-bar">
-            <h2>{t("Home")}</h2>
+            <h2 className="home">{t("Home")}</h2>
             {matches ? (
                 <div>
                     <ul className="link-container">

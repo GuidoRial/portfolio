@@ -1,0 +1,51 @@
+.hero {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: Lato;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.hero-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-who-i-am {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.what-i-do {
+    font-size: 3rem;
+}
+
+.statement {
+    font-size: 1.5rem;
+    color: var(--secondary-text);
+}
+
+.hero-photo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 850px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
