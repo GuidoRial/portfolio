@@ -14,7 +14,7 @@
             - #252525 // Primary color
             - #fbfbfb // Primary color
             - #d3bdff // Secondary color
-    - ENG / ESP options
+    - ENG / ESP options [DONE]
     - Ecosystem
         - People should be able to move to and from:
             - Portfolio
@@ -30,14 +30,14 @@
 
 2. Navbar
 
-    - Is sticky
+    - Is sticky [DONE]
     - Its links redirect people to wherever they want to go
         - Home
         - About
         - Skills
         - Projects
         - Contact
-        - **Language selector**
+        - **Language selector** [DONE]
 
 3. Home
 
