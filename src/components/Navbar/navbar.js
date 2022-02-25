@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { flagStyle } from "../../aux";
 import i18next from "i18next";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Link } from "react-scroll";
 
 function Navbar({ t, sidebar, setSidebar, showSidebar }) {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -29,15 +30,50 @@ function Navbar({ t, sidebar, setSidebar, showSidebar }) {
     const matches = useMediaQuery("(min-width:850px)");
 
     return (
-        <nav className="nav-bar" >
-            <h2 className="home">{t("Home")}</h2>
+        <nav className="nav-bar">
+            <Link
+                style={{ color: "white" }}
+                to="hero"
+                smooth={true}
+                duration={1500}
+            >
+                <h2 className="home">{t("Home")}</h2>
+            </Link>
             {matches ? (
                 <div>
                     <ul className="link-container">
-                        <li className="nav-bar-lists">{t("About")}</li>
-                        <li className="nav-bar-lists">{t("Skills")}</li>
-                        <li className="nav-bar-lists">{t("Projects")}</li>
-                        <li className="nav-bar-lists">{t("Contact")}</li>
+                        <Link
+                            style={{ color: "white" }}
+                            to="about"
+                            smooth={true}
+                            duration={1500}
+                        >
+                            <li className="nav-bar-lists">{t("About")}</li>
+                        </Link>
+                        <Link
+                            style={{ color: "white" }}
+                            to="skills"
+                            smooth={true}
+                            duration={1500}
+                        >
+                            <li className="nav-bar-lists">{t("Skills")}</li>
+                        </Link>
+                        <Link
+                            style={{ color: "white" }}
+                            to="projects"
+                            smooth={true}
+                            duration={1500}
+                        >
+                            <li className="nav-bar-lists">{t("Projects")}</li>
+                        </Link>
+                        <Link
+                            style={{ color: "white" }}
+                            to="contact"
+                            smooth={true}
+                            duration={1500}
+                        >
+                            <li className="nav-bar-lists">{t("Contact")}</li>
+                        </Link>
 
                         <i
                             className="fas fa-globe"

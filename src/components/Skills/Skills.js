@@ -16,7 +16,7 @@ import { t } from "i18next";
 
 function Skills() {
     return (
-        <section className="skills-container">
+        <section className="skills-container" id="skills">
             <h2>{t("Skills")}</h2>
             <div className="skills">
                 <div className="skill">

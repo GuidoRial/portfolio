@@ -17,7 +17,7 @@ import "aos/dist/aos.css";
 
 function Projects() {
     const [projects, setProjects] = useState([]);
-    console.log(i18n.language);
+
     useEffect(() => {
         i18n.language === "en"
             ? setProjects(englishProjectsList)
@@ -29,11 +29,15 @@ function Projects() {
     }, []);
 
     return (
-        <section className="projects-container">
+        <section className="projects-container" id="projects">
             <h2>{t("Projects")}</h2>
             <div className="projects">
                 {projects.map((project) => (
-                    <div className="project" key={project.name} data-aos="fade-up" >
+                    <div
+                        className="project"
+                        key={project.name}
+                        data-aos="fade-up"
+                    >
                         <img
                             src={project.picture}
                             alt={project.name}

@@ -7,7 +7,6 @@ import Alert from "@mui/material/Alert";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import FileSaver, { saveAs } from "file-saver";
 import { t } from "i18next";
 
 function Contact() {
@@ -38,9 +37,8 @@ function Contact() {
 
     const isInvalid = email === "" || message === "" || !email.includes("@");
 
-
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <h2>{t("Contact")}</h2>
             <h3>{t("Find_me")}</h3>
             <div className="contact-skills-container">
@@ -150,7 +148,6 @@ function Contact() {
                         className="project-button contact-submit"
                         disabled={isInvalid}
                         style={{ opacity: isInvalid ? "0.5" : "1" }}
-                    
                     >
                         {t("Get_In_Touch")}
                     </button>

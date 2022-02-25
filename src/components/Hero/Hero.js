@@ -11,7 +11,7 @@ function Hero() {
         Aos.init({ duration: 1000 });
     }, []);
     return (
-        <section className="hero">
+        <section className="hero" id="hero">
             <div className="hero-who-i-am " data-aos="fade-right">
                 <h1 className="my-name">Guido Rial</h1>
                 <h2 className="what-i-do">{t("What_I_do")}</h2>
