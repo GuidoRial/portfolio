@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PokeScreenShot from "../../assets/poke-game.png";
-import TodoScreenShot from "../../assets/todo-list.png";
-import InstaClone from "../../assets/InstaClone.png";
+
 import { t } from "i18next";
 import "./Projects.css";
 import { iconStyle } from "../../aux";

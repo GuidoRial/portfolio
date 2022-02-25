@@ -154,6 +154,7 @@
 }
 
 @media (min-width: 425px) and (max-width: 1024px) {
+ 
     .project {
         flex-wrap: wrap;
         width: 80%;
@@ -171,4 +172,3 @@
         text-align: justify;
     }
 }
-
