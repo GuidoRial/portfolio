@@ -1,5 +1,4 @@
-import React from "react";
-import { projects } from "./projectList";
+import React, { useEffect, useState } from "react";
 import PokeScreenShot from "../../assets/poke-game.png";
 import TodoScreenShot from "../../assets/todo-list.png";
 import InstaClone from "../../assets/InstaClone.png";
@@ -14,10 +13,22 @@ import {
     SiReact,
 } from "react-icons/si";
 import { Button } from "@mui/material";
+import i18n from "i18next";
+import englishProjectsList from "./englishProjectsList.json";
+import spanishProjectsList from "./spanishProjectsLists.json";
 
 //On click, take the link as a parameter and open it in a new tab, create 1 function, send project.livePreview or codeSource as params
+// Create a json for each language and load it dynamically according to the current language
 
 function Projects() {
+    const [projects, setProjects] = useState([]);
+    console.log(i18n.language);
+    useEffect(() => {
+        i18n.language === "en"
+            ? setProjects(englishProjectsList)
+            : setProjects(spanishProjectsList);
+    }, [i18n.language]);
+
     return (
         <section className="projects-container">
             <h2>{t("Projects")}</h2>
@@ -60,8 +71,12 @@ function Projects() {
                             </div>
                         </div>
                         <div className="project-button-container">
-                            <button className="project-button">Live Preview</button>
-                            <button className="project-button">Code Source</button>
+                            <button className="project-button">
+                                Live Preview
+                            </button>
+                            <button className="project-button">
+                                Code Source
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -75,3 +75,5 @@
     - It has a download CV button
 
 8. Things like animations in the background, personalized cursor and that thing where the background moves at different speeds as I scroll could be cool
+
+9. Make this site responsive for 2k and 4k monitors

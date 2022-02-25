@@ -23,9 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     padding: 2rem;
     margin: 0 2rem;
-    flex-wrap: wrap;
 }
 
 .project-image {
@@ -35,21 +35,20 @@
 }
 
 .project-info {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   gap: 1rem;
-   padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
 }
-
 
 .project-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
-
 
 .project-description {
     color: var(--secondary-text);
+    font-size: 1.25rem;
 }
 
 .project-icons-container {
@@ -81,6 +80,17 @@
 }
 
 @media (max-width: 950px) {
+    .project {
+        flex-wrap: wrap;
+    }
+    .project-name {
+        text-align: center;
+    }
+
+    .project-description {
+        text-align: justify;
+    }
+
     .project-image {
         width: 20rem;
     }
