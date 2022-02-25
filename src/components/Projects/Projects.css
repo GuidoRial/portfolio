@@ -17,15 +17,23 @@
     font-size: 3rem;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .project {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
     padding: 2rem;
     margin: 0 2rem;
+    background: url("../../assets/moon.jpg");
+    background-size: cover;
+    text-align: center;
 }
 
 .project-image {
@@ -55,6 +63,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.project-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.skill:hover {
+    color: var(--secondary-color);
+}
+
+.project-skill > i,
+.project-skill > p {
+    cursor: pointer;
 }
 
 .project-button-container {
