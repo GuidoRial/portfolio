@@ -37,7 +37,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-
 }
 
 .project-image {
@@ -83,11 +82,6 @@
     color: var(--secondary-color);
 }
 
-.project-skill > i,
-.project-skill > p {
-    cursor: pointer;
-}
-
 .project-button-container {
     display: flex;
     justify-content: space-evenly;
@@ -121,9 +115,10 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
     .project {
         flex-wrap: wrap;
+        width: 15rem;
     }
     .project-name {
         text-align: center;
@@ -134,7 +129,7 @@
     }
 
     .project-image {
-        width: 20rem;
+        width: 10rem;
     }
 }
 

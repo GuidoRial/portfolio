@@ -2,7 +2,7 @@
 
 ## Project features
 
-1. General
+1. General [DONE]
 
     - Color palette
         - #141414 // Primary color
@@ -39,14 +39,14 @@
         - Contact
         - **Language selector** [DONE]
 
-3. Home
+3. Home [DONE]
 
     - My name [DONE]
     - Front end web developer [DONE]
     - My photo [DONE]
     - A big statement (Lo que no se, lo aprendo) [DONE]
 
-4. About
+4. About [DONE]
 
     - Three sentences or less [DONE]
         - I'm constantly learning, I love what I do and love learning about this
@@ -64,17 +64,18 @@
         - Firebase
         - Webpack
 
-6. Projects
+6. Projects [DONE]
 
     - Each project card needs to have a picture, description, features and two buttons, one for the live preview and other for the source code
 
-7. Contact
+7. Contact [DONE]
 
     - It needs to have a form connected to Firebase so that people can send me an email straight from my website
     - It has to have links to Linkedin and GitHub
     - It has a download CV button
 
-8. Things like parallax, personalized cursor and animations
+8. Things like parallax, personalized cursor and animations [DONE]
 
 9. Make this site responsive for 2k and 4k monitors [DONE]
-10. Make icons responsive for 2k and 4k monitors
+10. Make icons responsive for 2k and 4k monitors [DONE]
+

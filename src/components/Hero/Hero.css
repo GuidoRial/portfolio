@@ -47,7 +47,6 @@
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid var(--secondary-color);
-
 }
 
 @keyframes fadeLeft {
@@ -61,6 +60,23 @@
     }
 }
 
+@media (max-width: 330px) {
+    .hero {
+        height: 70%;
+        width: 100%;
+    }
+
+    .hero-who-i-am {
+        font-size: 2em;
+    }
+    .what-i-do {
+        font-size: 1rem;
+    }
+
+    .statement {
+        font-size: 0.5rem;
+    }
+}
 @media (max-width: 850px) {
     .hero {
         grid-template-columns: 1fr;

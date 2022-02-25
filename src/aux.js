@@ -11,3 +11,9 @@ export const iconStyle = {
     height: "30px",
     cursor: "pointer",
 };
+
+export const clearAllInputs = () => {
+    Array.from(document.querySelectorAll("input")).forEach(
+        (input) => (input.value = "")
+    );
+};

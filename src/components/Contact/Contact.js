@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { SiGmail, SiGithub, SiLinkedin } from "react-icons/si";
 import { AiOutlineDownload } from "react-icons/ai";
-import { iconStyle } from "../../aux";
+import { clearAllInputs, iconStyle } from "../../aux";
 import "./Contact.css";
 import Alert from "@mui/material/Alert";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { t } from "i18next";
+import emailjs from "emailjs-com";
 
 function Contact() {
     const [showCopiedToClipboard, setShowCopiedToClipBoard] = useState(false);
@@ -15,6 +16,8 @@ function Contact() {
 
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [name, setName] = useState("");
+    const [messageReceived, setMessageReceived] = useState(false);
 
     const handleCopyToClipboard = () => {
         navigator.clipboard.writeText("rialguido@gmail.com");
@@ -35,7 +38,26 @@ function Contact() {
         }, 3000);
     };
 
-    const isInvalid = email === "" || message === "" || !email.includes("@");
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.send(
+            "service_iyar8pc",
+            "template_hd42dir",
+            { email: email, message: message, name: name },
+            "user_poa1hzV8iA6rqjK5nb10N"
+        );
+        setEmail("");
+        setMessage("");
+        setName("");
+        clearAllInputs();
+        setMessageReceived(true);
+        setTimeout(() => {
+            setMessageReceived(false);
+        }, 3000);
+    };
+
+    const isInvalid =
+        email === "" || message === "" || name === "" || !email.includes("@");
 
     return (
         <section className="contact" id="contact">
@@ -89,7 +111,7 @@ function Contact() {
                         alt="download-cv"
                         style={disableButton ? { pointerEvents: "none" } : null}
                     >
-                        Download CV
+                        English CV
                     </a>
                 </button>
                 <button
@@ -105,7 +127,7 @@ function Contact() {
                         alt="download-cv"
                         style={disableButton ? { pointerEvents: "none" } : null}
                     >
-                        Descargar CV
+                        CV en español
                     </a>
                 </button>
             </div>
@@ -115,18 +137,19 @@ function Contact() {
                 </Alert>
             )}
             <h3>{t("Or_Send_Email")}</h3>
-            <form
-                action="http://formsubmit.com/rialguido@gmail.com"
-                method="POST"
-                className="contact-form"
-            >
+            {messageReceived && (
+                <Alert severity="success" data-aos="fade-right">
+                    {t("Email_Sent")}
+                </Alert>
+            )}
+            <form className="contact-form" onSubmit={sendEmail}>
                 <input
-                    type="hidden"
-                    name="_subject"
-                    value="New email from your portfolio page"
+                    className="contact-input"
+                    type="name"
+                    name="name"
+                    placeholder="Your name..."
+                    onChange={(e) => setName(e.target.value)}
                 />
-                <input type="hidden" name="_captcha" value="false" />
-
                 <input
                     className="contact-input"
                     type="email"
@@ -144,10 +167,13 @@ function Contact() {
                 />
                 <div className="submit-button-container">
                     <button
+                        disabled={messageReceived}
                         type="submit"
                         className="project-button contact-submit"
                         disabled={isInvalid}
-                        style={{ opacity: isInvalid ? "0.5" : "1" }}
+                        style={{
+                            opacity: isInvalid || messageReceived ? "0.5" : "1",
+                        }}
                     >
                         {t("Get_In_Touch")}
                     </button>
