@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SiGmail, SiGithub, SiLinkedin } from "react-icons/si";
-import { AiOutlineDownload } from "react-icons/ai";
-import { clearAllInputs, iconStyle } from "../../aux";
+import { clearAllInputs, flagStyle, iconStyle } from "../../aux";
 import "./Contact.css";
 import Alert from "@mui/material/Alert";
 
@@ -103,7 +102,13 @@ function Contact() {
                     className="project-button contact-button"
                     onClick={handleDownloadFile}
                 >
-                    <AiOutlineDownload />
+                    <img
+                        src={
+                            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png"
+                        }
+                        alt={"country-flag"}
+                        style={flagStyle}
+                    />
 
                     <a
                         href={require("../../assets/CVs/Guido-Rials-CV.pdf")}
@@ -120,7 +125,13 @@ function Contact() {
                     className="project-button contact-button"
                     onClick={handleDownloadFile}
                 >
-                    <AiOutlineDownload />
+                    <img
+                        src={
+                            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png"
+                        }
+                        alt={"country-flag"}
+                        style={flagStyle}
+                    />
                     <a
                         href={require("../../assets/CVs/CV-de-Guido-Rial.pdf")}
                         download="CV-de-Guido-Rial.pdf"
@@ -170,6 +181,7 @@ function Contact() {
                         disabled={messageReceived}
                         type="submit"
                         className="project-button contact-submit"
+                        // eslint-disable-next-line react/jsx-no-duplicate-props
                         disabled={isInvalid}
                         style={{
                             opacity: isInvalid || messageReceived ? "0.5" : "1",
