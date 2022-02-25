@@ -122,7 +122,7 @@ function Contact() {
                                 disableButton ? { pointerEvents: "none" } : null
                             }
                         >
-                            English CV
+                            English Resume
                         </a>
                     </button>
                     <button
