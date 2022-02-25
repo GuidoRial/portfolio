@@ -47,7 +47,7 @@ function Projects() {
                                 {project.description}
                             </p>
                             <div className="project-icons-container">
-                                <div className="project-skill">
+                                <>
                                     {project.technologies.length > 4 ? (
                                         <>
                                             <FrontEndTech />
@@ -61,7 +61,7 @@ function Projects() {
                                             <FrontEndTech />
                                         </>
                                     )}
-                                </div>
+                                </>
                             </div>
                             <div className="project-button-container">
                                 <button

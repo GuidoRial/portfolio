@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/navbar";
 import Projects from "./components/Projects/Projects";
@@ -25,7 +26,6 @@ function App() {
             />
             {sidebar && (
                 <Sidebar
-                   
                     sidebar={sidebar}
                     setSidebar={setSidebar}
                     showSidebar={showSidebar}
@@ -35,6 +35,7 @@ function App() {
             <About />
             <Skills />
             <Projects />
+            <Contact />
         </div>
     );
 }
