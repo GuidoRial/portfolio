@@ -18,7 +18,6 @@ import { englishProjectsList } from "./englishProjectsList";
 import { spanishProjectsList } from "./spanishProjectsLists";
 import FrontEndTech from "./FrontEndTech";
 
-
 //On click, take the link as a parameter and open it in a new tab, create 1 function, send project.livePreview or codeSource as params
 // Create a json for each language and load it dynamically according to the current language
 
@@ -65,10 +64,26 @@ function Projects() {
                                 </div>
                             </div>
                             <div className="project-button-container">
-                                <button className="project-button">
+                                <button
+                                    className="project-button"
+                                    onClick={() =>
+                                        window.open(
+                                            project.livePreview,
+                                            "_blank"
+                                        )
+                                    }
+                                >
                                     Live Preview
                                 </button>
-                                <button className="project-button">
+                                <button
+                                    className="project-button"
+                                    onClick={() =>
+                                        window.open(
+                                            project.codeSource,
+                                            "_blank"
+                                        )
+                                    }
+                                >
                                     Code Source
                                 </button>
                             </div>
