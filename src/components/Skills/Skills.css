@@ -45,3 +45,16 @@
 .skill > p {
     cursor: pointer;
 }
+
+@media (min-width: 2000px) {
+    .skills-container > h2 {
+        font-size: 5rem;
+    }
+
+
+}
+@media (min-width: 3000px) {
+        .skills-container > h2 {
+        font-size: 8rem;
+    }
+}

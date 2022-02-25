@@ -67,3 +67,40 @@
         font-size: 1.5rem;
     }
 }
+
+@media (min-width: 2000px) {
+    .my-name {
+        font-size: 10rem;
+    }
+
+    .what-i-do {
+        font-size: 5rem;
+    }
+
+    .statement {
+        font-size: 3rem;
+    }
+
+    .hero-photo {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+@media (min-width: 3000px) {
+    .my-name {
+        font-size: 15rem;
+    }
+
+    .what-i-do {
+        font-size: 7rem;
+    }
+
+    .statement {
+        font-size: 4rem;
+    }
+
+    .hero-photo {
+        width: 40rem;
+        height: 40rem;
+    }
+}

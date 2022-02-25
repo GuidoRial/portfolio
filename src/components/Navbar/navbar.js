@@ -5,7 +5,6 @@ import MenuItem from "@mui/material/MenuItem";
 import { flagStyle } from "../../aux";
 import i18next from "i18next";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Sidebar from "../Sidebar/Sidebar";
 
 function Navbar({ t, sidebar, setSidebar, showSidebar }) {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -39,6 +38,7 @@ function Navbar({ t, sidebar, setSidebar, showSidebar }) {
                         <li className="nav-bar-lists">{t("Skills")}</li>
                         <li className="nav-bar-lists">{t("Projects")}</li>
                         <li className="nav-bar-lists">{t("Contact")}</li>
+
                         <i
                             className="fas fa-globe"
                             aria-controls={open ? "basic-menu" : undefined}

@@ -69,7 +69,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 0.5rem;
     width: 5rem;
     height: 5rem;
@@ -121,5 +120,58 @@
 
     .project-image {
         width: 20rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .project-image {
+        width: 70rem;
+    }
+
+    .project-name {
+        font-size: 3.5rem;
+    }
+
+    .project-description {
+        font-size: 2rem;
+    }
+
+    .project-button {
+        width: 11rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+    .projects {
+        gap: 2rem;
+    }
+
+    .projects-container > h2 {
+        font-size: 5rem;
+    }
+}
+@media (min-width: 3000px) {
+    .project-image {
+        width: 90rem;
+    }
+
+    .project-name {
+        font-size: 6rem;
+    }
+
+    .project-description {
+        font-size: 3.5rem;
+    }
+
+    .project-button {
+        width: 14rem;
+        height: 6rem;
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        gap: 3rem;
+    }
+    .projects-container > h2 {
+        font-size: 8rem;
     }
 }

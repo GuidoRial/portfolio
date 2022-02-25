@@ -90,42 +90,6 @@ function Projects() {
                         </div>
                     </div>
                 ))}
-                {/*
-                    
-                            
-                            <div className="project-icons-container">
-                                <div className="skill">
-                                    <SiHtml5 style={iconStyle} />
-                                    <p>HTML5</p>
-                                </div>
-                                <div className="skill">
-                                    <SiCss3 style={iconStyle} />
-                                    <p>CSS3</p>
-                                </div>
-                                <div className="skill">
-                                    <SiJavascript style={iconStyle} />
-                                    <p>JavaScript</p>
-                                </div>
-                                <div className="skill">
-                                    <SiReact style={iconStyle} />
-                                    <p>React</p>
-                                </div>
-                                <div className="skill">
-                                    <SiFirebase style={iconStyle} />
-                                    <p>Firebase</p>
-                                </div>
-                            </div>
-                            <div className="project-button-container">
-                                <button className="project-button">
-                                    Live Preview
-                                </button>
-                                <button className="project-button">
-                                    Code Source
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                                */}
             </div>
         </section>
     );
