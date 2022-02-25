@@ -74,6 +74,7 @@
     - It has to have links to Linkedin and GitHub
     - It has a download CV button
 
-8. Things like animations in the background, personalized cursor and that thing where the background moves at different speeds as I scroll could be cool
+8. Things like parallax, personalized cursor and animations
 
-9. Make this site responsive for 2k and 4k monitors
+9. Make this site responsive for 2k and 4k monitors [DONE]
+10. Make icons responsive for 2k and 4k monitors

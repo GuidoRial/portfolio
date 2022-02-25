@@ -5,21 +5,15 @@ import InstaClone from "../../assets/InstaClone.png";
 import { t } from "i18next";
 import "./Projects.css";
 import { iconStyle } from "../../aux";
-import {
-    SiCss3,
-    SiFirebase,
-    SiHtml5,
-    SiJavascript,
-    SiReact,
-} from "react-icons/si";
-import { Button } from "@mui/material";
+import { SiFirebase } from "react-icons/si";
+
 import i18n from "i18next";
 import { englishProjectsList } from "./englishProjectsList";
 import { spanishProjectsList } from "./spanishProjectsLists";
 import FrontEndTech from "./FrontEndTech";
 
-//On click, take the link as a parameter and open it in a new tab, create 1 function, send project.livePreview or codeSource as params
-// Create a json for each language and load it dynamically according to the current language
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -30,12 +24,16 @@ function Projects() {
             : setProjects(spanishProjectsList);
     }, [i18n.language]);
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
+
     return (
         <section className="projects-container">
             <h2>{t("Projects")}</h2>
             <div className="projects">
                 {projects.map((project) => (
-                    <div className="project" key={project.name}>
+                    <div className="project" key={project.name} data-aos="fade-up" >
                         <img
                             src={project.picture}
                             alt={project.name}

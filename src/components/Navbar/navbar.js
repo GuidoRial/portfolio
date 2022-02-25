@@ -29,7 +29,7 @@ function Navbar({ t, sidebar, setSidebar, showSidebar }) {
     const matches = useMediaQuery("(min-width:850px)");
 
     return (
-        <nav className="nav-bar">
+        <nav className="nav-bar" >
             <h2 className="home">{t("Home")}</h2>
             {matches ? (
                 <div>
