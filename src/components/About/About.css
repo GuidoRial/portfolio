@@ -4,11 +4,15 @@
     padding: 1rem;
     height: 50vh;
     border-bottom: 1px solid var(--secondary-color);
-    background: url("../../assets//about-background.jpg");
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Parallax */
+    background: url("../../assets//about-background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-container {
@@ -28,7 +32,7 @@
 
 .about-container > p {
     font-size: 1.3rem;
-    color: var(--secondary-text);
+    color: var(--white);
 }
 
 @media (max-width: 850px) {

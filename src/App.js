@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ParallaxProvider } from "react-scroll-parallax";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -32,7 +33,9 @@ function App() {
                 />
             )}
             <Hero />
-            <About />
+            <ParallaxProvider>
+                <About />
+            </ParallaxProvider>
             <Skills />
             <Projects />
             <Contact />
