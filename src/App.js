@@ -33,9 +33,9 @@ function App() {
                 />
             )}
             <Hero />
-            <ParallaxProvider>
+  
                 <About />
-            </ParallaxProvider>
+         
             <Skills />
             <Projects />
             <Contact />
