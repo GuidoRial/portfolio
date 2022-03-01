@@ -5,7 +5,7 @@ import shoppingCartPhoto from "../../assets/shopping-cart.png";
 
 export const spanishProjectsList = [
     {
-        name: "Clon de Instagram hecho con React, React Router, MaterialUI y Firebase",
+        name: "Clon de Instagram",
         picture: instagramPhoto,
         description:
             "Mi proyecto más completo hasta ahora. Tiene casi toda la funcionalidad que cualquier red social debería tener. Se implementó un usuario demo para que quienes quieran testear ésta aplicación puedan hacerlo sin necesidad de crear un usuario (aunque se puede hacer perfectamente). Una lista completa de las funcionalidades se encuentra en mi GitHub",

@@ -5,7 +5,7 @@ import shoppingCartPhoto from "../../assets/shopping-cart.png";
 
 export const englishProjectsList = [
     {
-        name: "Instagram Clone made with React, React Router, MaterialUI and Firebase",
+        name: "Instagram Clone",
         picture: instagramPhoto,
         description:
             "My biggest project yet. It has almost every bit of functionality any social media app should have. A demo user was implemented so people can login without creating an account (but they can do that, of course). Full list of features can be read on GitHub",
