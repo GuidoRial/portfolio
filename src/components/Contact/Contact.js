@@ -34,7 +34,7 @@ function Contact() {
         setDisableButton(true);
         setTimeout(() => {
             setDisableButton(false);
-        }, 3000);
+        }, 5000);
     };
 
     const sendEmail = (e) => {
@@ -52,7 +52,7 @@ function Contact() {
         setMessageReceived(true);
         setTimeout(() => {
             setMessageReceived(false);
-        }, 3000);
+        }, 7000);
     };
 
     const isInvalid =
@@ -94,11 +94,26 @@ function Contact() {
                     </div>
                 </div>
                 {showCopiedToClipboard && (
-                    <Alert severity="success" data-aos="fade-left">
+                    <Alert
+                        severity="success"
+                        data-aos="fade-left"
+                        icon={false}
+                        sx={{ color: "#141414", backgroundColor: "#d3bdff" }}
+                    >
                         {t("Email_Downloaded")}
                     </Alert>
                 )}
                 <h3>{t("Download")}</h3>
+                {disableButton && (
+                    <Alert
+                        severity="success"
+                        data-aos="fade-right"
+                        icon={false}
+                        sx={{ color: "#141414", backgroundColor: "#d3bdff" }}
+                    >
+                        {t("Downloaded")}
+                    </Alert>
+                )}
                 <div className="contact-button-container">
                     <button
                         style={{ opacity: disableButton ? "0.5" : "1" }}
@@ -150,16 +165,16 @@ function Contact() {
                         </a>
                     </button>
                 </div>
-                {disableButton && (
-                    <Alert severity="success" data-aos="fade-right">
-                        {t("Downloaded")}
-                    </Alert>
-                )}
             </div>
             <div>
                 <h3>{t("Or_Send_Email")}</h3>
                 {messageReceived && (
-                    <Alert severity="success" data-aos="fade-right">
+                    <Alert
+                        severity="success"
+                        data-aos="fade-right"
+                        icon={false}
+                        sx={{ color: "#141414", backgroundColor: "#d3bdff" }}
+                    >
                         {t("Email_Sent")}
                     </Alert>
                 )}

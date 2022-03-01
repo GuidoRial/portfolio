@@ -20,6 +20,9 @@
 .projects {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -37,10 +40,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
 .project-image {
-    width: 50rem;
+    width: 60%;
     height: auto;
     border-radius: 5px;
 }
@@ -115,7 +120,50 @@
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 1024px) {
+    .project-name {
+        font-size: 2rem;
+    }
+
+    .project-description {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 60%;
+    }
+    .project-image {
+        width: 50%;
+    }
+    .project-name {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .project {
+        width: 60%;
+    }
+    .project-image {
+        width: 50%;
+    }
+    .project-name {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
     .project {
         flex-wrap: wrap;
         width: 13rem;
@@ -130,45 +178,6 @@
 
     .project-description {
         font-size: 1rem;
-        text-align: justify;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-    .project {
-        flex-wrap: wrap;
-        width: 15rem;
-    }
-    .project-image {
-        width: 17rem;
-    }
-
-    .project-name {
-        font-size: 1rem;
-    }
-
-    .project-description {
-        font-size: 1rem;
-        text-align: justify;
-    }
-}
-
-@media (min-width: 425px) and (max-width: 1024px) {
- 
-    .project {
-        flex-wrap: wrap;
-        width: 80%;
-    }
-    .project-image {
-        width: 60%;
-    }
-
-    .project-name {
-        font-size: 2rem;
-    }
-
-    .project-description {
-        font-size: 1.5rem;
         text-align: justify;
     }
 }

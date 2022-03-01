@@ -74,12 +74,12 @@ export const spanishProjectsList = [
         ],
     },
     {
-        name: "Carrito de compra",
+        name: "Tienda falsa",
         picture: shoppingCartPhoto,
         description:
             "Una tienda falsa con un carrito. El usuario puede agregar, eliminar o modificar la cantidad de items desde el carrito",
-        livePreview: "https://guidorial.github.io/shopping-cart/",
-        codeSource: "https://github.com/GuidoRial/shopping-cart",
+        livePreview: "https://fake-store-eta.vercel.app//",
+        codeSource: "https://github.com/GuidoRial/fake-store",
         technologies: [
             {
                 tech: "HTML",
