@@ -1,81 +1,39 @@
-# Portfolio
+# My Portfolio, made with CSS, JavaScript, React, MaterialUI, AOS and React-i18next
 
-## Project features
+## Live Preview
 
-1. General [DONE]
+https://portfolio-guidorial.vercel.app/
 
-    - Color palette
-        - #141414 // Primary color
-        - #252525 // Primary color
-        - #fbfbfb // Primary color
-        - #d3bdff // Secondary color
-    - Add a light mode
-        - Color palette
-            - #252525 // Primary color
-            - #fbfbfb // Primary color
-            - #d3bdff // Secondary color
-    - ENG / ESP options [DONE]
-    - Ecosystem
-        - People should be able to move to and from:
-            - Portfolio
-            - Github
-            - Linkedin
-            - CV // ESP / ENG with ability to choose
-        - Making easily accessible links in each of those pages it's **extremely important**
-        - All sites share the same color scheme
-    - It's _responsive_
-    - People know _who I am and what I do on opening of this page_, that means that I have to be **intentional** with the way I present myself. To achieve that I have to:
-        1. Show my face. I'm not a soulless coder.
-        2. I can talk briefly about my interests
+## Project Description
 
-2. Navbar
+I'm on the process of finding my first job as a front end web developer. This project was made with the intention of showcasing my abilities in this area. I choose a calm set of colors that I could mix with images of stars, galaxies and planets, as I've never seen that before and I think it looks really cool. Plus it's how software developing makes me feel like.
 
-    - Is sticky [DONE]
-    - Its links redirect people to wherever they want to go
-        - Home
-        - About
-        - Skills
-        - Projects
-        - Contact
-        - **Language selector** [DONE]
+If I had to think of a word that describes my approach to this project is **intentional**. I always take user experience into account when developing something and this project was not an exception. I made sure to create an ecosystem where recruiters could travel between my resume, GitHub, LinkedIn and this portfolio on 1 click. 
+I made links on the navbar that would take you anywhere you would want to go and made sure to add a translation button so both english and spanish speakers could see what I can do.
 
-3. Home [DONE]
+### What I used
 
-    - My name [DONE]
-    - Front end web developer [DONE]
-    - My photo [DONE]
-    - A big statement (Lo que no se, lo aprendo) [DONE]
+1. CSS
+2. JavaScript
+3. React
+4. MaterialUI
+5. React-i18next
 
-4. About [DONE]
+## Features
+1. Language switch between english and spanish
+2. It's responsive
+3. Links that make you scroll to that particular section of the webpage
+4. With UX in mind, developed in a way that makes travelling between my resume to and from GitHub, LinkedIn an this portfolio really easy.
+5. Special buttons to download my resume from here
+6. A form that establishes a way of communicating with me from this webpage.
 
-    - Three sentences or less [DONE]
-        - I'm constantly learning, I love what I do and love learning about this
-        - I'm hardworking, passionate.
 
-5. Skills [DONE]
+## What I learned
 
-    - Frontend
-        - HTML
-        - CSS
-        - JavaScript
-        - React
-    - Tools
-        - Git
-        - Firebase
-        - Webpack
-
-6. Projects [DONE]
-
-    - Each project card needs to have a picture, description, features and two buttons, one for the live preview and other for the source code
-
-7. Contact [DONE]
-
-    - It needs to have a form connected to Firebase so that people can send me an email straight from my website
-    - It has to have links to Linkedin and GitHub
-    - It has a download CV button
-
-8. Things like parallax, personalized cursor and animations [DONE]
-
-9. Make this site responsive for 2k and 4k monitors [DONE]
-10. Make icons responsive for 2k and 4k monitors [DONE]
-
+1. MaterialUI
+    - How to use the sx prop to change the style from the component
+    - How to use the Alert component
+2. AOS
+    - How to use this library to achieve beautiful animations on scroll
+3. React-i18next
+    - How to use i18next, react-i18next and i18next-http-backend to change translate the webpage, alternate between those languages and store those changes con cookies
