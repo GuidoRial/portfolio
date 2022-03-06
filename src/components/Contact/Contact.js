@@ -130,8 +130,8 @@ function Contact() {
                         />
 
                         <a
-                            href={require("../../assets/CVs/Guido-Rials-CV.pdf")}
-                            download="Guido-Rials-CV.pdf"
+                            href={require("../../assets/CVs/Guido-Rial-Resume.pdf")}
+                            download="Guido Rial - Resume - Front end web developer.pdf"
                             alt="download-cv"
                             style={
                                 disableButton ? { pointerEvents: "none" } : null
@@ -155,7 +155,7 @@ function Contact() {
                         />
                         <a
                             href={require("../../assets/CVs/CV-de-Guido-Rial.pdf")}
-                            download="CV-de-Guido-Rial.pdf"
+                            download="Guido Rial - CV- Desarrollador Web Front End"
                             alt="download-cv"
                             style={
                                 disableButton ? { pointerEvents: "none" } : null
@@ -206,8 +206,6 @@ function Contact() {
                             disabled={messageReceived}
                             type="submit"
                             className="project-button contact-submit"
-                            // eslint-disable-next-line react/jsx-no-duplicate-props
-                            disabled={isInvalid}
                             style={{
                                 opacity:
                                     isInvalid || messageReceived ? "0.5" : "1",
