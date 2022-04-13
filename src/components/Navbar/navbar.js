@@ -29,6 +29,12 @@ function Navbar({ t, sidebar, setSidebar, showSidebar }) {
 
     const matches = useMediaQuery("(min-width:850px)");
 
+    const toggleLanguage = () => {
+        i18next.language === "en"
+            ? i18next.changeLanguage("es")
+            : i18next.changeLanguage("en");
+    };
+
     return (
         <nav className="nav-bar">
             <Link
@@ -74,40 +80,12 @@ function Navbar({ t, sidebar, setSidebar, showSidebar }) {
                         >
                             <li className="nav-bar-lists">{t("Contact")}</li>
                         </Link>
-
-                        <i
-                            className="fas fa-globe"
-                            aria-controls={open ? "basic-menu" : undefined}
-                            aria-expanded={open ? "true" : undefined}
-                            onClick={handleClick}
-                        />
-                        <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
+                        <li
+                            className="nav-bar-lists"
+                            onClick={() => toggleLanguage()}
                         >
-                            <MenuItem onClick={() => selectEnglish()}>
-                                <img
-                                    src={
-                                        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png"
-                                    }
-                                    alt={"country-flag"}
-                                    style={flagStyle}
-                                />
-                                English
-                            </MenuItem>
-                            <MenuItem onClick={() => selectSpanish()}>
-                                <img
-                                    src={
-                                        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png"
-                                    }
-                                    alt={"country-flag"}
-                                    style={flagStyle}
-                                />
-                                Español
-                            </MenuItem>
-                        </Menu>
+                            {t("Change_language")}
+                        </li>
                     </ul>
                 </div>
             ) : (

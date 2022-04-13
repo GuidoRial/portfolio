@@ -6,7 +6,7 @@ import Alert from "@mui/material/Alert";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { t } from "i18next";
+import i18next, { t } from "i18next";
 import emailjs from "emailjs-com";
 
 function Contact() {
@@ -39,6 +39,10 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        if (isInvalid) {
+            console.log("Is invalid");
+            return;
+        }
         emailjs.send(
             "service_iyar8pc",
             "template_hd42dir",
@@ -57,6 +61,8 @@ function Contact() {
 
     const isInvalid =
         email === "" || message === "" || name === "" || !email.includes("@");
+
+
 
     return (
         <section className="contact" id="contact">

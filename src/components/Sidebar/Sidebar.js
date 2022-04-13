@@ -14,7 +14,6 @@ function Sidebar({ sidebar, setSidebar, showSidebar }) {
     return (
         <aside>
             <ul>
-                
                 <li className="sidebar-lists" onClick={toggleLanguage}>
                     {t("Change_language")}
                 </li>
