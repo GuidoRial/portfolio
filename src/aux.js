@@ -12,7 +12,7 @@ export const iconStyle = {
 };
 
 export const clearAllInputs = () => {
-    Array.from(document.querySelectorAll("input")).forEach(
-        (input) => (input.value = "")
-    );
+    Array.from(document.querySelectorAll("input"))
+        .concat(Array.from(document.querySelectorAll("textarea")))
+        .forEach((input) => (input.value = ""));
 };

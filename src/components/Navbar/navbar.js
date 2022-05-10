@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { flagStyle } from "../../aux";
-import i18next from "i18next";
+import i18next, { t } from "i18next";
 import { Link } from "react-scroll";
 
-function Navbar({ t }) {
+
+function Navbar() {
     const toggleLanguage = () => {
         i18next.language === "en"
             ? i18next.changeLanguage("es")

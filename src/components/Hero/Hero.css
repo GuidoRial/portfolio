@@ -1,13 +1,10 @@
 .hero {
-    width: 100%;
     background-color: var(--primary-color);
     color: var(--white);
     font-family: Lato;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-    gap: 1.5rem;
     border-bottom: 1px solid var(--secondary-color);
     height: 75vh;
 }

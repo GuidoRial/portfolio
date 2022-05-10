@@ -11,7 +11,7 @@ function App() {
     const { t } = useTranslation();
     return (
         <div className="App">
-            <Navbar t={t} />
+            <Navbar />
             <Hero />
             <About />
             <Skills />
