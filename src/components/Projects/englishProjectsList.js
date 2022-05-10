@@ -52,7 +52,7 @@ export const englishProjectsList = [
         name: "Pokemon Memory Game",
         pictures: [memoryGamePhoto],
         description:
-            "A small memory game with the RESTful PokeAPI. The game gives the user 21 Pokemons, they have to click once on each card without repeating. If the user click on a card twice, they will lose. Pokemons change place after every click",
+            "A small memory game with the RESTful PokeAPI. The game gives the user 21 Pokemons, they have to click once on each card without repeating. If the user clicks on a card twice, they will lose. Pokemons change place after every click",
         livePreview: "https://guidorial.github.io/pokemon-memory-game/",
         codeSource: "https://github.com/GuidoRial/pokemon-memory-game",
         technologies: ["HTML", "CSS", "JavaScript", "React"],
