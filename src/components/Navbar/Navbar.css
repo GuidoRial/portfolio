@@ -8,7 +8,6 @@
     align-items: center;
     padding: 0.5rem 1rem;
     width: 100%;
-    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     z-index: 9999;
@@ -16,6 +15,9 @@
 
 .nav-bar-lists {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-bar-lists:hover,
@@ -38,27 +40,10 @@
     .nav-bar {
         justify-content: space-between;
     }
-    .fa-bars {
-        margin-right: 0.5rem;
+    .nav-bar-lists {
+        display: none;
     }
-}
-
-@media (min-width: 2000px) {
-    .nav-bar,
-    .home {
-        font-size: 3rem;
-    }
-    .link-container {
-        gap: 1.5rem;
-    }
-}
-
-@media (min-width: 3000px) {
-    .nav-bar,
-    .home {
-        font-size: 4rem;
-    }
-    .link-container {
-        gap: 2rem;
+    .swipeLanguageFlag {
+        display: block;
     }
 }

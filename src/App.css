@@ -8,10 +8,10 @@
 
 :root {
     --header-background: #141414;
-    --primary-color: #141414;
-    --white: #fbfbfb;
-    --secondary-text: #d3d3d3;
-    --secondary-color: #d3bdff;
-    --secondary-color-hover: #8243ff;
+    --primary-color: #030200;
+    --white: #FAFAFA;
+    --secondary-text: #e9e9e9;
+    --secondary-color: #ffa818;
+    --secondary-color-hover: #f06000;
     --sidebar-background: rgba(37, 37, 37, 0.9);
 }
