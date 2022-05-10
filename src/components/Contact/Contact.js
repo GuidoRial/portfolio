@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SiGmail, SiGithub, SiLinkedin } from "react-icons/si";
-import { clearAllInputs, flagStyle, iconStyle } from "../../aux";
+import { clearAllInputs, flagStyle, iconStyle } from "../../utils";
 import "./Contact.css";
 import Alert from "@mui/material/Alert";
 
@@ -62,8 +62,6 @@ function Contact() {
     const isInvalid =
         email === "" || message === "" || name === "" || !email.includes("@");
 
-
-
     return (
         <section className="contact" id="contact">
             <div className="contact-left">
@@ -104,7 +102,7 @@ function Contact() {
                         severity="success"
                         data-aos="fade-left"
                         icon={false}
-                        sx={{ color: "#141414", backgroundColor: "#d3bdff" }}
+                        sx={{ color: "#030200", backgroundColor: "#ffa818" }}
                     >
                         {t("Email_Downloaded")}
                     </Alert>
@@ -115,7 +113,7 @@ function Contact() {
                         severity="success"
                         data-aos="fade-right"
                         icon={false}
-                        sx={{ color: "#141414", backgroundColor: "#d3bdff" }}
+                        sx={{ color: "#030200", backgroundColor: "#ffa818" }}
                     >
                         {t("Downloaded")}
                     </Alert>

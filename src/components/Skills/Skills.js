@@ -11,7 +11,7 @@ import {
     SiExpress,
     SiMongodb,
 } from "react-icons/si";
-import { iconStyle } from "../../aux";
+import { iconStyle } from "../../utils";
 import { t } from "i18next";
 
 function Skills() {

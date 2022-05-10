@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { flagStyle } from "../../aux";
+import { flagStyle } from "../../utils";
 import i18next from "i18next";
 import { Link } from "react-scroll";
 
