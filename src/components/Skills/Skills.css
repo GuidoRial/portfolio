@@ -12,8 +12,10 @@
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.skills-container > h2 {
+.skills-title {
     font-size: 3rem;
+    color: var(--white);
+    border-bottom: 5px solid var(--secondary-color);
 }
 
 .skills {
@@ -41,20 +43,16 @@
     color: var(--secondary-color);
 }
 
-.skill > i,
-.skill > p {
-    cursor: pointer;
-}
-
-@media (min-width: 2000px) {
-    .skills-container > h2 {
-        font-size: 5rem;
-    }
-
-
-}
-@media (min-width: 3000px) {
-        .skills-container > h2 {
-        font-size: 8rem;
+@media (max-width: 850px) {
+    .skills-title {
+        font-size: 2rem;
     }
 }
+
+@media (max-width: 450px) {
+    .skills-title {
+        font-size: 1.5rem;
+        border-bottom: 3px solid var(--secondary-color);
+    }
+}
+
