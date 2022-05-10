@@ -1,98 +1,72 @@
-import instagramPhoto from "../../assets/InstaClone.png";
-import memoryGamePhoto from "../../assets/poke-game.png";
-import todoListPhoto from "../../assets/todo-list.png";
-import shoppingCartPhoto from "../../assets/shopping-cart.png";
+import memoryGamePhoto from "../../assets/project-photos/pokemon-game/poke-game.png";
+import instagramHome from "../../assets/project-photos/instagram-clone/home.png";
+import instagramLogin from "../../assets/project-photos/instagram-clone/login.png";
+import instagramPhotoProfile from "../../assets/project-photos/instagram-clone/photo-from-profile.png";
+import instagramProfile from "../../assets/project-photos/instagram-clone/profile.png";
+import instagramSignup from "../../assets/project-photos/instagram-clone/signup.png";
+import todoDashboard from "../../assets/project-photos/todo-app/dashboard.png";
+import todoIndividualTodo from "../../assets/project-photos/todo-app/individual-todo.png";
+import todoLogin from "../../assets/project-photos/todo-app/login.png";
+import todoSignup from "../../assets/project-photos/todo-app/signup.png";
+import storeCart from "../../assets/project-photos/store/cart.png";
+import storeHome from "../../assets/project-photos/store/home.png";
+import storeStore from "../../assets/project-photos/store/store.png";
 
 export const spanishProjectsList = [
     {
+        id: 1,
         name: "Clon de Instagram",
-        picture: instagramPhoto,
+        pictures: [
+            instagramHome,
+
+            instagramProfile,
+            instagramPhotoProfile,
+            instagramLogin,
+            instagramSignup,
+        ],
         description:
-            "Mi proyecto más completo hasta ahora. Tiene casi toda la funcionalidad que cualquier red social debería tener. Se implementó un usuario demo para que quienes quieran testear ésta aplicación puedan hacerlo sin necesidad de crear un usuario (aunque se puede hacer perfectamente). Una lista completa de las funcionalidades se encuentra en mi GitHub",
+            "Este proyecto tiene casi toda la funcionalidad que cualquier red social debería tener. Se implementó un usuario demo para que quienes quieran testear ésta aplicación puedan hacerlo sin necesidad de crear un usuario (aunque se puede hacer perfectamente). Una lista completa de las funcionalidades se encuentra en mi GitHub",
         livePreview: "https://instagram-clone-six-tau.vercel.app/",
         codeSource: "https://github.com/GuidoRial/instagram-clone",
+        technologies: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
+    },
+    {
+        id: 2,
+        name: "Todo List",
+        pictures: [todoDashboard, todoIndividualTodo, todoLogin, todoSignup],
+        description:
+            "Una aplicacion para crear, editar, marcar como completada o eliminar una tarea. Se implemento MongoDB para guardar usuarios y tareas",
+        livePreview: "https://todo-app-mern-guidorial.vercel.app/login",
+        codeSource: "https://github.com/GuidoRial/todo-app-MERN",
         technologies: [
-            {
-                tech: "HTML",
-            },
-            {
-                tech: "CSS",
-            },
-            {
-                tech: "JavaScript",
-            },
-            {
-                tech: "React",
-            },
-            {
-                tech: "Firebase",
-            },
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "MongoDB",
+            "Express",
+            "React",
+            "NodeJS",
         ],
     },
     {
+        id: 3,
         name: "Juego de memoria de Pokemon",
-        picture: memoryGamePhoto,
+        pictures: [memoryGamePhoto],
         description:
-            "Un pequeño juego hecho con la PokeAPI. Éste juego le da al usuario 21 pokemones y el usuario tiene que clickear una vez en cada uno sin repetir. Si repite, pierde. Los pokemones se mueven despues de cada click",
+            "Un pequeño juego hecho con la PokeAPI. Éste juego le da al usuario 21 pokemones y el usuario tiene que clickear una vez en cada uno sin repetir. Si repite, pierde. Los pokemones cambian de lugar despues de cada click",
         livePreview: "https://guidorial.github.io/pokemon-memory-game/",
         codeSource: "https://github.com/GuidoRial/pokemon-memory-game",
-        technologies: [
-            {
-                tech: "HTML",
-            },
-            {
-                tech: "CSS",
-            },
-            {
-                tech: "JavaScript",
-            },
-            {
-                tech: "React",
-            },
-        ],
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
     },
+
     {
-        name: "Todo List",
-        picture: todoListPhoto,
-        description:
-            "Una pequeña aplicacion para crear, editar, marcar como completada o eliminar una tarea. Todos los cambios se guardan en Local Storage",
-        livePreview: "https://guidorial.github.io/todo-list/",
-        codeSource: "https://github.com/GuidoRial/todo-list",
-        technologies: [
-            {
-                tech: "HTML",
-            },
-            {
-                tech: "CSS",
-            },
-            {
-                tech: "JavaScript",
-            },
-            {
-                tech: "React",
-            },
-        ],
-    },
-    {
+        id: 3,
         name: "Tienda falsa",
-        picture: shoppingCartPhoto,
+        pictures: [storeCart, storeHome, storeStore],
         description:
             "Una tienda falsa con un carrito. El usuario puede agregar, eliminar o modificar la cantidad de items desde el carrito",
         livePreview: "https://fake-store-eta.vercel.app//",
         codeSource: "https://github.com/GuidoRial/fake-store",
-        technologies: [
-            {
-                tech: "HTML",
-            },
-            {
-                tech: "CSS",
-            },
-            {
-                tech: "JavaScript",
-            },
-            {
-                tech: "React",
-            },
-        ],
+        technologies: ["HTML", "CSS", "JavaScript", "React"],
     },
 ];

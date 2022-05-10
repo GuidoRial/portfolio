@@ -13,8 +13,9 @@
     align-items: center;
 }
 
-.projects-container > h2 {
+.projects-title {
     font-size: 3rem;
+    border-bottom: 5px solid var(--secondary-color);
 }
 
 .projects {
@@ -34,7 +35,7 @@
     align-items: center;
     padding: 2rem;
     margin: 0 2rem;
-    background: url("../../assets/moon.jpg");
+    background: url("../../assets/project-background-photo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,7 +46,7 @@
 }
 
 .project-image {
-    width: 60%;
+    width: 75%;
     height: auto;
     border-radius: 5px;
 }
@@ -68,23 +69,10 @@
 }
 
 .project-icons-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.project-skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    width: 5rem;
-    height: 5rem;
-    padding: 1rem;
-}
-
-.skill:hover {
-    color: var(--secondary-color);
 }
 
 .project-button-container {
@@ -104,56 +92,64 @@
     transition: 0.05s ease-in-out;
 }
 
-.project-button:hover {
+.carousel-buttons-container {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.carousel-button {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.project-button:hover,
+.carousel-button:hover {
     background-color: var(--secondary-color-hover);
     color: var(--white);
 }
 
-@keyframes slideProjectUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 @media (max-width: 1024px) {
-    .project-name {
-        font-size: 2rem;
-    }
-
     .project-description {
-        font-size: 1.5rem;
         text-align: justify;
     }
 }
 
-@media (max-width: 768px) {
-    .project {
-        width: 60%;
-    }
-    .project-image {
-        width: 50%;
+@media (max-width: 850px) {
+    .projects-title {
+        font-size: 2rem;
     }
     .project-name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .project-description {
+        color: var(--secondary-text);
         font-size: 1rem;
+    }
+    .project {
+        width: 60%;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
+    .projects-title {
+        font-size: 1.5rem;
+        border-bottom: 3px solid var(--secondary-color);
+    }
     .project {
-        width: 60%;
+        width: 75%;
     }
-    .project-image {
-        width: 50%;
-    }
+
     .project-name {
         font-size: 1.3rem;
     }
@@ -161,6 +157,24 @@
     .project-description {
         font-size: 1rem;
     }
+
+    .project-image {
+        width: 90%;
+    }
+
+    /*--------------------------*/
+
+    .carousel-button {
+        width: 2rem;
+        height: 1.5rem;
+    }
+
+    .project-button-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
 }
 
 @media (max-width: 375px) {
