@@ -28,7 +28,7 @@ export const spanishProjectsList = [
             "Este proyecto tiene casi toda la funcionalidad que cualquier red social debería tener. Se implementó un usuario demo para que quienes quieran testear ésta aplicación puedan hacerlo sin necesidad de crear un usuario (aunque se puede hacer perfectamente). Una lista completa de las funcionalidades se encuentra en mi GitHub",
         livePreview: "https://instagram-clone-six-tau.vercel.app/",
         codeSource: "https://github.com/GuidoRial/instagram-clone",
-        technologies: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
+        technologies: ["CSS", "JavaScript", "React", "Firebase"],
     },
     {
         id: 2,
@@ -39,9 +39,9 @@ export const spanishProjectsList = [
         livePreview: "https://todo-app-mern-guidorial.vercel.app/login",
         codeSource: "https://github.com/GuidoRial/todo-app-MERN",
         technologies: [
-            "HTML",
             "CSS",
             "JavaScript",
+            "TypeScript",
             "MongoDB",
             "Express",
             "React",

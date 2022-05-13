@@ -8,6 +8,7 @@ import {
     SiNodedotjs,
     SiExpress,
     SiMongodb,
+    SiTypescript,
 } from "react-icons/si";
 import { iconStyle } from "../../aux";
 function ProjectTech({ tech }) {
@@ -19,7 +20,7 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
         case "CSS":
             return (
                 <div className="skill">
@@ -27,7 +28,7 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
         case "JavaScript":
             return (
                 <div className="skill">
@@ -35,7 +36,15 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
+        case "TypeScript":
+            return (
+                <div className="skill">
+                    <SiTypescript style={iconStyle} />
+                    <p>{tech}</p>
+                </div>
+            );
+
         case "React":
             return (
                 <div className="skill">
@@ -43,7 +52,6 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
         case "MongoDB":
             return (
                 <div className="skill">
@@ -51,7 +59,7 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
         case "Express":
             return (
                 <div className="skill">
@@ -59,7 +67,7 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
         case "NodeJS":
             return (
                 <div className="skill">
@@ -67,7 +75,7 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
         case "Firebase":
             return (
                 <div className="skill">
@@ -75,7 +83,7 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-            break;
+
         default:
             return (
                 <div className="skill">

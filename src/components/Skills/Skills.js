@@ -9,6 +9,7 @@ import {
     SiReact,
     SiNodedotjs,
     SiExpress,
+    SiTypescript,
     SiMongodb,
 } from "react-icons/si";
 import { iconStyle } from "../../aux";
@@ -30,6 +31,10 @@ function Skills() {
                 <div className="skill">
                     <SiJavascript style={iconStyle} />
                     <p>JavaScript</p>
+                </div>
+                <div className="skill">
+                    <SiTypescript style={iconStyle} />
+                    <p>TypeScript</p>
                 </div>
                 <div className="skill">
                     <SiMongodb style={iconStyle} />
