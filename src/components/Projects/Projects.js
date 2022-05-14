@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { t } from "i18next";
 import "./Projects.css";
 import i18n from "i18next";
+import uniqid from "uniqid";
 import { englishProjectsList } from "./englishProjectsList";
 import { spanishProjectsList } from "./spanishProjectsLists";
 import Aos from "aos";
@@ -27,7 +28,7 @@ function Projects() {
             <h2 className="projects-title">{t("Projects")}</h2>
             <div className="projects">
                 {projects.map((project) => (
-                    <Project id={project.id} project={project} />
+                    <Project key={uniqid()} project={project} />
                 ))}
             </div>
         </section>

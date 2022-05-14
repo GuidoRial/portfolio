@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Navbar.css";
 import { flagStyle } from "../../aux";
 import i18next, { t } from "i18next";

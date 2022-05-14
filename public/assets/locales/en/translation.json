@@ -11,12 +11,14 @@
     "Love_learning": "With a love for learning and helping others since I was a child, I studied to be a physical therapist.",
     "Create_things": "I always wanted to dedicate my life to creating things and solving problems, so when I saw that software development had all of those things my mind went --> 🤯",
     "Lifelong_learning": "Committed to the idea of life-long learning, I'm a self taught front end web developer with a passion for Javascript, React, and all things web development.",
-
     "Find_me": "I'm just 1 to 3 clicks away, try clicking these icons...",
     "Download": "You can download both versions of my CV here:",
     "Downloaded": " Resume downloaded successfully!",
     "Or_Send_Email": "Or send me an email here and I'll get in touch with you!",
     "Get_In_Touch": "Get in touch",
     "Email_Downloaded": "e-mail copied to clipboard successfully!",
-    "Email_Sent": "Thanks for reaching out! I received your email and I'll be contacting you soon enough"
+    "Email_Sent": "Thanks for reaching out! I received your email and I'll be contacting you soon enough",
+    "Email_placeholder": "Your e-mail...",
+    "Name_placeholder": "Your name...",
+    "Message_placeholder": "Your message..."
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectTech from "./ProjectTech";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import uniqid from "uniqid";
 
 function Project({ project }) {
     const [carouselIndex, setCarouselIndex] = useState(0);
@@ -22,7 +23,7 @@ function Project({ project }) {
     };
 
     return (
-        <div key={project.id} className="project" data-aos="fade-up">
+        <div key={uniqid()} className="project" data-aos="fade-up">
             <div className="carousel">
                 <img
                     src={project?.pictures[carouselIndex]}
@@ -51,8 +52,8 @@ function Project({ project }) {
                 <h3 className="project-name">{project.name}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-icons-container">
-                    {project.technologies.map((tech, i) => (
-                        <ProjectTech id={`${tech}, ${i}`} tech={tech} />
+                    {project.technologies.map((tech) => (
+                        <ProjectTech key={uniqid()} tech={tech} />
                     ))}
                 </div>
 
