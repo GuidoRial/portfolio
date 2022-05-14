@@ -1,5 +1,6 @@
 import memoryGamePhoto from "../../assets/project-photos/pokemon-game/poke-game.png";
 import instagramHome from "../../assets/project-photos/instagram-clone/home.png";
+import instagramHome2 from "../../assets/project-photos/instagram-clone/home2.png";
 import instagramLogin from "../../assets/project-photos/instagram-clone/login.png";
 import instagramPhotoProfile from "../../assets/project-photos/instagram-clone/photo-from-profile.png";
 import instagramProfile from "../../assets/project-photos/instagram-clone/profile.png";
@@ -18,7 +19,7 @@ export const spanishProjectsList = [
         name: "Clon de Instagram",
         pictures: [
             instagramHome,
-
+            instagramHome2,
             instagramProfile,
             instagramPhotoProfile,
             instagramLogin,
@@ -62,7 +63,7 @@ export const spanishProjectsList = [
     {
         id: 3,
         name: "Tienda falsa",
-        pictures: [storeCart, storeHome, storeStore],
+        pictures: [storeCart, storeStore],
         description:
             "Una tienda falsa con un carrito. El usuario puede agregar, eliminar o modificar la cantidad de items desde el carrito",
         livePreview: "https://fake-store-eta.vercel.app//",

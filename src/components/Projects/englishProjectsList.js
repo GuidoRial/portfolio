@@ -1,5 +1,6 @@
 import memoryGamePhoto from "../../assets/project-photos/pokemon-game/poke-game.png";
 import instagramHome from "../../assets/project-photos/instagram-clone/home.png";
+import instagramHome2 from "../../assets/project-photos/instagram-clone/home2.png";
 import instagramLogin from "../../assets/project-photos/instagram-clone/login.png";
 import instagramPhotoProfile from "../../assets/project-photos/instagram-clone/photo-from-profile.png";
 import instagramProfile from "../../assets/project-photos/instagram-clone/profile.png";
@@ -18,6 +19,7 @@ export const englishProjectsList = [
         name: "Instagram Clone",
         pictures: [
             instagramHome,
+            instagramHome2,
             instagramProfile,
             instagramPhotoProfile,
             instagramLogin,
@@ -61,7 +63,7 @@ export const englishProjectsList = [
     {
         id: 4,
         name: "Fake Store",
-        pictures: [storeCart, storeHome, storeStore],
+        pictures: [storeCart, storeStore],
         description:
             "A Fake Store with a cart. You can add or delete items from it, modify the amount of items or empty the cart",
         livePreview: "https://fake-store-eta.vercel.app//",
