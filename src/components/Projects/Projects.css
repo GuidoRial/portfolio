@@ -36,7 +36,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     background: url("../../assets/project-background-photo.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -48,6 +47,7 @@
 }
 
 .project-image {
+    margin-top: 1rem;
     width: 75%;
     height: auto;
     border-radius: 5px;
@@ -62,7 +62,7 @@
 }
 
 .project-name {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .project-description {
@@ -125,11 +125,17 @@
     .projects-title {
         font-size: 2rem;
     }
+    .project {
+        width: 90%;
+    }
+    .project-image {
+        width: 95%;
+    }
 }
 
 @media (max-width: 450px) {
     .projects-title {
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
         border-bottom: 3px solid var(--secondary-color);
     }
 }

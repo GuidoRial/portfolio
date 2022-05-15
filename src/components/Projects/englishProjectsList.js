@@ -36,7 +36,7 @@ export const englishProjectsList = [
         name: "Todo App",
         pictures: [todoDashboard, todoIndividualTodo, todoLogin, todoSignup],
         description:
-            "A todo app where you can create, edit, mark as complete or delete a Todo. MongoDB was implemented to store users and todos",
+            "My first full-stack project using the MERN Stack with TypeScript. I used MongoDB to store users and todos. Users can create, edit and delete todos.",
         livePreview: "https://todo-app-mern-guidorial.vercel.app/login",
         codeSource: "https://github.com/GuidoRial/todo-app-MERN",
         technologies: [

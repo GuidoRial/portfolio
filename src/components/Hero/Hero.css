@@ -48,18 +48,23 @@
     border: 1px solid var(--secondary-color);
 }
 
-.contact-button-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-}
-
 .contact-button {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1px;
     padding: 1rem;
+}
+
+.contact-button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.contact-icons-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 .contact-icon {
     cursor: pointer;
@@ -70,7 +75,37 @@
     gap: 0.5rem;
     width: 5rem;
     height: 5rem;
+}
 
+.contact-icon:hover {
+    color: var(--secondary-color);
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
 }
 
 a {
@@ -83,11 +118,6 @@ a:visited,
 a:hover,
 a:active {
     color: var(--secondary-color);
-}
-
-.contact-icons-container {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 @media (max-width: 1300px) {

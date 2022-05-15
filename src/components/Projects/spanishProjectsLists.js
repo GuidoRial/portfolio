@@ -36,7 +36,7 @@ export const spanishProjectsList = [
         name: "Todo List",
         pictures: [todoDashboard, todoIndividualTodo, todoLogin, todoSignup],
         description:
-            "Una aplicacion para crear, editar, marcar como completada o eliminar una tarea. Se implemento MongoDB para guardar usuarios y tareas",
+            "Mi primer proyecto full-stack usando el stack MERN con TypeScript. Se implementó MongoDB para guardar usuarios y tareas, las cuales éstos pueden crear, editar o borrar.",
         livePreview: "https://todo-app-mern-guidorial.vercel.app/login",
         codeSource: "https://github.com/GuidoRial/todo-app-MERN",
         technologies: [

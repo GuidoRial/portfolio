@@ -21,9 +21,9 @@ function Hero() {
         navigator.clipboard.writeText("rialguido@gmail.com");
     };
 
-    useEffect(() => {
-        Aos.init({ duration: 1000 });
-    }, []);
+    // useEffect(() => {
+    //     Aos.init({ duration: 1000 });
+    // }, []);
 
     const handleDownloadFile = () => {
         setDisableButton(true);
@@ -65,6 +65,7 @@ function Hero() {
                         <SiLinkedin style={iconStyle} />
                     </div>
                     <div
+                        id="emailIcon"
                         className="contact-icon"
                         onClick={handleCopyToClipboard}
                     >
