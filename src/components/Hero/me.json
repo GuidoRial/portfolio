@@ -1,0 +1,143 @@
+{
+    "contact_info": {
+        "name": "Guido Rial",
+        "title": "Front end web developer",
+        "based_in": "Rosario, Argentina",
+        "phone_number": "+54 341 718-2338",
+        "email": "rialguido@gmail.com"
+    },
+    "learn_more": [
+        {
+            "link_to": "My Portfolio",
+            "link": "https://portfolio-guidorial.vercel.app/"
+        },
+        {
+            "link_to": "GitHub",
+            "link": "https://github.com/GuidoRial"
+        },
+        {
+            "link_to": "LinkedIn",
+            "link": "https://www.linkedin.com/in/guido-rial-275552221/"
+        }
+    ],
+    "my_skills": [
+        {
+            "type": "technical",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "MongoDB",
+                "Express",
+                "React",
+                "NodeJS"
+            ]
+        },
+        {
+            "type": "soft",
+            "skills": ["Organization", "Time Management"]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Instagram Clone",
+            "technologies_used": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Firebase"
+            ],
+            "description": "Designed and built a social media app where users can follow each other, post, like, save posts and comment. Firebase was introduced as a backend service to implement user authentication. Firestore Database was incorporated to store users and posts which were displayed to the user through an UI built with React and MaterialUI.",
+            "project_links": [
+                {
+                    "link_to": "Live Preview",
+                    "link": "https://instagram-clone-six-tau.vercel.app/"
+                },
+                {
+                    "link_to": "Source Code",
+                    "link": "https://github.com/GuidoRial/instagram-clone"
+                }
+            ]
+        },
+        {
+            "title": "Todo App",
+            "technologies_used": [
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "MongoDB",
+                "Express",
+                "React",
+                "NodeJS"
+            ],
+            "description": "Constructed a Todo app using the MERN stack where users can add, edit or delete todos. MongoDB was implemented to store users and todos",
+            "project_links": [
+                {
+                    "link_to": "Live Preview",
+                    "link": "https://todo-app-mern-guidorial.vercel.app/login"
+                },
+                {
+                    "link_to": "Source Code",
+                    "link": "https://github.com/GuidoRial/todo-app-MERN"
+                }
+            ]
+        },
+        {
+            "title": "Pokemon Memory Game",
+            "technologies_used": ["HTML", "CSS", "JavaScript", "React"],
+            "description": "Developed a browser game for users to test their memory. React was implemented to fetch information about 21 pokemons from the PokeAPI and displayed to the user as cards. The user has to click on each pokemon once and the cards swap places. If the user clicks twice on the same pokemon, they lose.",
+            "project_links": [
+                {
+                    "link_to": "Live Preview",
+                    "link": "https://guidorial.github.io/pokemon-memory-game/"
+                },
+                {
+                    "link_to": "Source Code",
+                    "link": "https://github.com/GuidoRial/pokemon-memory-game"
+                }
+            ]
+        },
+        {
+            "title": "Fake Store",
+            "technologies_used": ["HTML", "CSS", "JavaScript", "React"],
+            "description": "Constructed a fake cellphones e-commerce website with a cart. Users can add or delete items from it, modify the amount of items or empty the cart.",
+            "project_links": [
+                {
+                    "link_to": "Live Preview",
+                    "link": "https://fake-store-eta.vercel.app/"
+                },
+                {
+                    "link_to": "Source Code",
+                    "link": "https://github.com/GuidoRial/fake-store"
+                }
+            ]
+        }
+    ],
+    "work_experience": [
+        {
+            "place": "Multiple health facilities, Rosario",
+            "position": "Intern of Physical Therapy",
+            "from": 2019,
+            "to": 2022,
+            "job_description": "Collaborated with different health care physicians to ensure an interdisciplinary approach on each and every patient. Analyzed an assessed gait and posture of over 100 patients to gain insight over the origins of different types of biomechanical anomalies. Organized and guided group sessions of physical therapy with over 15 people per group in a psychiatric hospital. Provided a safe space for patients to work together, build morale as well as relationships."
+        }
+    ],
+    "education": [
+        {
+            "where": "The Odin Project",
+            "what": "Web Development",
+            "from": 2021,
+            "to": 2022,
+            "completed": true
+        },
+        {
+            "where": "Universidad del Gran Rosario",
+            "what": "Lic. en Kinesiología y Fisiatría",
+            "from": 2017,
+            "to": 2022,
+            "completed": false
+        }
+    ]
+}

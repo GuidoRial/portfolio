@@ -7,7 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid var(--secondary-color);
     gap: 1rem;
-    padding: 1rem;
+    padding: 0 2rem;
     height: 70vh;
 }
 
@@ -120,6 +120,25 @@ a:active {
     color: var(--secondary-color);
 }
 
+#coolResumeButton {
+    animation: floatingButton 2s linear infinite;
+}
+
+@keyframes floatingButton {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
 @media (max-width: 1300px) {
     .my-name {
         font-size: 4rem;
@@ -139,11 +158,14 @@ a:active {
         grid-template-columns: 1fr;
         height: 100%;
     }
+    .contact-button-container {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 400px) {
     .hero {
-        padding: 1rem 0.5rem;
+        padding: 0.3rem 1rem;
     }
     .hero-photo {
         width: 13rem;

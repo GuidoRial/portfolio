@@ -51,7 +51,7 @@ export const spanishProjectsList = [
     },
     {
         id: 3,
-        name: "Juego de memoria de Pokemon",
+        name: "Pokemon Memory Game",
         pictures: [memoryGamePhoto],
         description:
             "Un pequeño juego hecho con la PokeAPI. Éste juego le da al usuario 21 pokemones y el usuario tiene que clickear una vez en cada uno sin repetir. Si repite, pierde. Los pokemones cambian de lugar despues de cada click",

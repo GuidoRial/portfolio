@@ -1,0 +1,84 @@
+:root {
+    --bg-color: #1a1b26;
+    --yellow-bracket: #e4ba08;
+    --quot-marks-colon-commas: #7dcfff;
+    --blue-font: #4d76bf;
+    --pink-bracket: #a45180;
+    --cyan-font: #1390bb;
+    --green-font: #87bb58;
+    --indentation: 2rem;
+    --orange: #f3945d;
+}
+
+.cool-resume {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.resume {
+    width: 50%;
+}
+
+.first-level {
+    margin-left: var(--indentation);
+}
+
+.second-level {
+    margin-left: calc(var(--indentation) * 2);
+}
+
+.third-level {
+    margin-left: calc(var(--indentation) * 3);
+}
+
+.fourth-level {
+    margin-left: calc(var(--indentation) * 4);
+}
+
+.fifth-level {
+    margin-left: calc(var(--indentation) * 5);
+}
+
+.yellow {
+    color: var(--yellow-bracket);
+}
+
+.light-blue {
+    color: var(--quot-marks-colon-commas);
+}
+
+.blue {
+    color: var(--blue-font);
+}
+
+.pink {
+    color: var(--pink-bracket);
+}
+
+.cyan {
+    color: var(--cyan-font);
+}
+
+.green {
+    color: var(--green-font);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .resume {
+        overflow: hidden;
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}

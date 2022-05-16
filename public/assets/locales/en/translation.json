@@ -20,5 +20,6 @@
     "Email_Sent": "Thanks for reaching out! I received your email and I'll be contacting you soon enough",
     "Email_placeholder": "Your e-mail...",
     "Name_placeholder": "Your name...",
-    "Message_placeholder": "Your message..."
+    "Message_placeholder": "Your message...",
+    "Click_me": "Click me"
 }

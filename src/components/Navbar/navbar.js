@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { flagStyle } from "../../aux";
+import { flagStyle } from "../../utils";
 import i18next, { t } from "i18next";
 import { Link } from "react-scroll";
 

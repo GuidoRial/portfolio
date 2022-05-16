@@ -4,11 +4,12 @@ import myPhoto from "../../assets/my-photo.jpeg";
 import { t } from "i18next";
 
 import { SiGmail, SiGithub, SiLinkedin } from "react-icons/si";
-import { flagStyle, iconStyle } from "../../aux";
+import { flagStyle, iconStyle } from "../../utils";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Alert } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Hero() {
     const [showCopiedToClipboard, setShowCopiedToClipBoard] = useState(false);
@@ -21,9 +22,9 @@ function Hero() {
         navigator.clipboard.writeText("rialguido@gmail.com");
     };
 
-    // useEffect(() => {
-    //     Aos.init({ duration: 1000 });
-    // }, []);
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
 
     const handleDownloadFile = () => {
         setDisableButton(true);
@@ -111,7 +112,7 @@ function Hero() {
                         />
 
                         <a
-                            href={require("../../assets/CVs/Guido-Rial-Resume.pdf")}
+                            href={require("../../assets/CVs/Guido-Rial-Resume-Front-end-web-developer .pdf")}
                             download="Guido Rial - Resume - Front end web developer.pdf"
                             alt="download resume"
                             style={
@@ -135,7 +136,7 @@ function Hero() {
                             style={flagStyle}
                         />
                         <a
-                            href={require("../../assets/CVs/CV-de-Guido-Rial.pdf")}
+                            href={require("../../assets/CVs/Guido-Rial-CV-Desarrollador-Web-Front-End.pdf")}
                             download="Guido Rial - CV- Desarrollador Web Front End"
                             alt="descargar cv"
                             style={
@@ -144,6 +145,12 @@ function Hero() {
                         >
                             CV en español
                         </a>
+                    </button>
+                    <button
+                        className="project-button contact-button"
+                        id="coolResumeButton"
+                    >
+                        <Link to="cool-resume">{t("Click_me")}</Link>
                     </button>
                 </div>
             </div>

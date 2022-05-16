@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { clearAllInputs } from "../../aux";
+import { clearAllInputs } from "../../utils";
 import "./Contact.css";
 import Alert from "@mui/material/Alert";
 

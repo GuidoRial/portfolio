@@ -10,7 +10,7 @@ import {
     SiMongodb,
     SiTypescript,
 } from "react-icons/si";
-import { iconStyle } from "../../aux";
+import { iconStyle } from "../../utils";
 function ProjectTech({ tech }) {
     switch (tech) {
         case "HTML":
