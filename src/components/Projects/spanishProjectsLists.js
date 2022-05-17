@@ -10,7 +10,6 @@ import todoIndividualTodo from "../../assets/project-photos/todo-app/individual-
 import todoLogin from "../../assets/project-photos/todo-app/login.png";
 import todoSignup from "../../assets/project-photos/todo-app/signup.png";
 import storeCart from "../../assets/project-photos/store/cart.png";
-import storeHome from "../../assets/project-photos/store/home.png";
 import storeStore from "../../assets/project-photos/store/store.png";
 
 export const spanishProjectsList = [

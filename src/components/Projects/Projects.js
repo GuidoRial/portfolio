@@ -17,6 +17,7 @@ function Projects() {
         i18n.language === "en"
             ? setProjects(englishProjectsList)
             : setProjects(spanishProjectsList);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [i18n.language]);
 
     useEffect(() => {

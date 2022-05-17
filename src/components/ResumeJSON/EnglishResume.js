@@ -1,6 +1,6 @@
 import React from "react";
 import ContactInfoEng from "./EnglishVersion/ContactInfoEng";
-import "./CoolResume.css";
+import "./JSONResume.css";
 import MySkillsEng from "./EnglishVersion/MySkillsEng";
 import ProjectsEng from "./EnglishVersion/ProjectsEng";
 import WorkExperienceEng from "./EnglishVersion/WorkExperienceEng";

@@ -150,7 +150,7 @@ function Hero() {
                         className="project-button contact-button"
                         id="coolResumeButton"
                     >
-                        <Link to="cool-resume">{t("Click_me")}</Link>
+                        <Link to="resume.json">{t("Click_me")}</Link>
                     </button>
                 </div>
             </div>
