@@ -9,6 +9,7 @@ import {
     SiExpress,
     SiMongodb,
     SiTypescript,
+    SiApollographql,
 } from "react-icons/si";
 import { iconStyle } from "../../utils";
 function ProjectTech({ tech }) {
@@ -83,7 +84,13 @@ function ProjectTech({ tech }) {
                     <p>{tech}</p>
                 </div>
             );
-
+        case "Apollo":
+            return (
+                <div className="skill">
+                    <SiApollographql style={iconStyle} />
+                    <p>{tech}</p>
+                </div>
+            );
         default:
             return (
                 <div className="skill">

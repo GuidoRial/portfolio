@@ -9,8 +9,11 @@ import todoDashboard from "../../assets/project-photos/todo-app/dashboard.png";
 import todoIndividualTodo from "../../assets/project-photos/todo-app/individual-todo.png";
 import todoLogin from "../../assets/project-photos/todo-app/login.png";
 import todoSignup from "../../assets/project-photos/todo-app/signup.png";
-import storeCart from "../../assets/project-photos/store/cart.png";
-import storeStore from "../../assets/project-photos/store/store.png";
+import PDP from "../../assets/project-photos/ApolloEcommerce/PDP.png";
+import PLP from "../../assets/project-photos/ApolloEcommerce/PLP.png";
+import CurrencySelector from "../../assets/project-photos/ApolloEcommerce/CurrencySelector.png";
+import CartOverlay from "../../assets/project-photos/ApolloEcommerce/CartOverlay.png";
+import Cart from "../../assets/project-photos/ApolloEcommerce/Cart.png";
 
 export const spanishProjectsList = [
     {
@@ -60,13 +63,13 @@ export const spanishProjectsList = [
     },
 
     {
-        id: 3,
-        name: "Tienda falsa",
-        pictures: [storeCart, storeStore],
+        id: 4,
+        name: "Apollo e-commerce",
+        pictures: [PLP, PDP, CartOverlay, CurrencySelector, Cart],
         description:
-            "Una tienda falsa con un carrito. El usuario puede agregar, eliminar o modificar la cantidad de items desde el carrito",
-        livePreview: "https://fake-store-eta.vercel.app//",
-        codeSource: "https://github.com/GuidoRial/fake-store",
-        technologies: ["HTML", "CSS", "JavaScript", "React"],
+            "Un e-commerce con toda la funcionalidad que todo e-commerce debería tener. Los usuarios pueden filtrar por categoría o cambiar de divisa. Tienen un cart overlay donde pueden ver los productos agregados al carrito rapidamente con sus respectivos atributos seleccionados, un carousel cuando el producto tiene más de una foto y un boton de quick-add-to-cart para productos en stock que no tengan atributos. Los productos son importados de un servidor GraphQL usando Apollo GraphQL",
+        livePreview: "https://apollo-ecommerce.vercel.app/",
+        codeSource: "https://github.com/GuidoRial/apollo-ecommerce",
+        technologies: ["HTML", "CSS", "JavaScript", "React", "Apollo"],
     },
 ];

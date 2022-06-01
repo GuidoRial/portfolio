@@ -9,8 +9,11 @@ import todoDashboard from "../../assets/project-photos/todo-app/dashboard.png";
 import todoIndividualTodo from "../../assets/project-photos/todo-app/individual-todo.png";
 import todoLogin from "../../assets/project-photos/todo-app/login.png";
 import todoSignup from "../../assets/project-photos/todo-app/signup.png";
-import storeCart from "../../assets/project-photos/store/cart.png";
-import storeStore from "../../assets/project-photos/store/store.png";
+import PDP from "../../assets/project-photos/ApolloEcommerce/PDP.png";
+import PLP from "../../assets/project-photos/ApolloEcommerce/PLP.png";
+import CurrencySelector from "../../assets/project-photos/ApolloEcommerce/CurrencySelector.png";
+import CartOverlay from "../../assets/project-photos/ApolloEcommerce/CartOverlay.png";
+import Cart from "../../assets/project-photos/ApolloEcommerce/Cart.png";
 
 export const englishProjectsList = [
     {
@@ -61,12 +64,12 @@ export const englishProjectsList = [
 
     {
         id: 4,
-        name: "Fake Store",
-        pictures: [storeCart, storeStore],
+        name: "Apollo e-commerce",
+        pictures: [PLP, PDP, CartOverlay, CurrencySelector, Cart],
         description:
-            "A Fake Store with a cart. You can add or delete items from it, modify the amount of items or empty the cart",
-        livePreview: "https://fake-store-eta.vercel.app//",
-        codeSource: "https://github.com/GuidoRial/fake-store",
-        technologies: ["HTML", "CSS", "JavaScript", "React"],
+            "An e-commerce with all the functionality any e-commerce should have. Users can filter by category or change currencies. They have a cart overlay that display the products the user added to cart as well as its selected attributes, a carousel when a product have more than one picture and a quick-add-to-cart button for products with no attributes that are in stock. Products are fetched from a GraphQL server using Apollo GraphQL",
+        livePreview: "https://apollo-ecommerce.vercel.app/",
+        codeSource: "https://github.com/GuidoRial/apollo-ecommerce",
+        technologies: ["HTML", "CSS", "JavaScript", "React", "Apollo"],
     },
 ];
